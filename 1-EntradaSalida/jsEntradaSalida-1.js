@@ -6,8 +6,9 @@ function mostrar()
 	var segundoprecio;
 	var apellido="nadie";
 
-	apellido="Barrios";
+	
 	alert(apellido)
+	//testeando git
 	//alert("tal cual");valor literal
 	//alert(apellido);valor variable
 	//alert();imprime vacio
