@@ -17,7 +17,7 @@ function sumar()
 	segundnumero=parseInt(segundnumero);
 
 	suma=primernumero+segundnumero;
-	alert("el resultado de la suma es :"+suma)
+	alert("el resultado de la suma es :"+ suma)
 }
 
 function restar()
