@@ -26,7 +26,9 @@ function mostrar()
 		case "1":
 		case "2":
 		case "3":
-		ca
+		case "4":
+		case "5":
+		case "6":
 		case "20":
 		case "21":
 		case "22":
