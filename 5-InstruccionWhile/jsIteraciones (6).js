@@ -9,15 +9,19 @@ function mostrar()
 
 	contador = 0;
 	acumulador = 0;
-	numero = prompt("ingrese un numero","ejemplo");
-	numero = parseInt(numero);
+
 
 	while(contador<5)
 	{
+		numero = prompt("ingrese un numero","ejemplo");
+		numero = parseInt(numero);
+		while (isNaN(numero))
+		{
+			numero = prompt("ingrese un numero","ejemplo");
+			numero = parseInt(numero);
+		}
 		contador = contador+1;
 		acumulador = acumulador+numero;
-		numero = prompt("ingrese el numero"+contador,"ejemplo");
-		numero = parseInt(numero);
 	}
 
 	document.getElementById('suma').value=acumulador;
