@@ -6,7 +6,7 @@ function mostrar()
 	var segundoprecio;
 	var apellido="nadie";
 
-	
+	document.write("hola.<br>");
 	alert(apellido)
 	//testeando git
 	//alert("tal cual");valor literal
