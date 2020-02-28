@@ -1,23 +1,34 @@
 function mostrar()
 {
-	var i;
-	var numeroingresado;
-	var bandera;
+	var numero;
+	var anterior;
+	var flag;
+	var contador;
 
-	bandera=0;
-	numeroingresado = prompt("ingrese un numero");
-	numeroingresado = parseInt(numeroingresado);
-
-	for(i=2;i>numeroingresado;i++)
-	{
-		if(numeroingresado%i==0)
+	contador=0
+	anterior=0;
+	numero = prompt("ingrese un numero");
+	numero = parseInt(numero);
+	for (anterior=2;anterior<numero;anterior++)
+	{	
+		if (numero%anterior==0)
 		{
-			bandera=1;
+			flag=0;
+			break;
 		}
-	}
-	if(bandera!=1)
-	{
-		alert(numeroingresado+" es primo")
-	}
+		else
+		{
+			flag=1;
+			break;
+		}
 
+	}
+	if (flag==1)
+	{
+		alert("no es primo");
+	}
+	else
+	{
+		alert("es primo");
+	}
 }//FIN DE LA FUNCIÓN
